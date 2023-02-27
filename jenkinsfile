@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+        environment {
+        PATH = "C:\\Windows\\System32;C:\\Users\\raphj\\AppData\\Local\\Programs\\Python\\Python38;C:\\Program Files\\Docker\\Docker\\resources\\bin"
+    }
+
+    stages {
+        stage('Building'){
+            steps{
+                bat 'python -m pip install -r requirements.txt'
+            }
+        }
+        stage('Testing'){
+            steps{
+                bat 'python -m unittest'
+            }
+        }
+        stage('Deploying'){
+            steps{
+                bat 'docker build -t mlops_final_project .'
+                bat 'docker run -d mlops_final_project'
+            }
+        }
+    }
+}
