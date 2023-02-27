@@ -11,7 +11,7 @@ class FlaskTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_post(self):
-        response = self.app.post(Genre=Action, Type=TV, Producer=Bandai Visual, Studio=Sunrise, Popularity=1000, Members=1000, Episodes=20, Source=Original)
+        response = self.app.post(Genre="Action", Type="TV", Producer="Bandai Visual", Studio="Sunrise", Popularity=1000, Members=1000, Episodes=20, Source="Original")
         self.assertEqual(response.status_code, 200)
 
 if __name__ == '__main__':
