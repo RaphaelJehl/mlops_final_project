@@ -30,7 +30,9 @@ pipeline {
         
         stage('Push') {
             steps{
-                bat "docker tag mlops_final_project raphaeljehl/new_repo:mlops_final_project"
-                bat "docker push raphaeljehl/new_repo:mlops_final_project"
+                bat "docker tag mlops_final_project raphaeljehl/mlops_repo:mlops_final_project"
+                bat "docker push raphaeljehl/mlops_repo:mlops_final_project"
+            }
+        }
     }
 }
