@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  /* Add some padding on the right side of the input boxes */
+  padding-right: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#genre, #producer, #anime-studio{
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    font-size: 16px;
+    height: auto;
+    min-height: 40px;
+    max-height: 120px;
+    overflow-y: auto;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Masque le curseur de la liste déroulante pour Webkit */
+/*select::-webkit-scrollbar {
+    display: none;
+}*/
+
+option {
+    padding: 3px 6px;
+}
+
+input[type="text"],
+    textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+/* Largeur de la barre de défilement */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Fond de la barre de défilement */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Curseur de la barre de défilement */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Curseur de la barre de défilement au survol */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#type{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zM2 5L0 3h4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: auto 60%;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#prediction {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#prediction h2 {
+    margin-top: 0;
+}
+
+#prediction p {
+    margin-bottom: 0;
+}

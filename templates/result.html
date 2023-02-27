@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rating Prediction</title>
+        <link rel="stylesheet" href="../static/css/style2.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Rating Prediction</h1>
+            <h2>User Input</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Input</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Genre</td>
+                  <td>{{genre}}</td>
+                </tr>
+                <tr>
+                  <td>Type</td>
+                  <td>{{ type }}</td>
+                </tr>
+                <tr>
+                  <td>Producer</td>
+                  <td>{{ producer }}</td>
+                </tr>
+                <tr>
+                  <td>Studio</td>
+                  <td>{{ studio }}</td>
+                </tr>
+                <tr>
+                  <td>Popularity</td>
+                  <td>{{ popularity }}</td>
+                </tr>
+                <tr>
+                  <td>Members</td>
+                  <td>{{ members }}</td>
+                </tr>
+                <tr>
+                  <td>Episodes</td>
+                  <td>{{ episodes }}</td>
+                </tr>
+                <tr>
+                  <td>Source</td>
+                  <td>{{ source }}</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2>Prediction Result</h2>
+            <div class="prediction">
+              <p>The predicted rating is: {{ prediction }}</p>
+            </div>
+          </div>
+
+    </body>
+
+</html>
