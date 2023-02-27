@@ -34,4 +34,5 @@ pipeline {
                 bat "docker push raphaeljehl/new_repo:mlops_final_project"
             }
         }
+    }
 }
