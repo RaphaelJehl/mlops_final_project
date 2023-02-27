@@ -114,7 +114,7 @@ def predict():
 
         prediction = model.predict(df.iloc[[0]])
 
-        return render_template('result.html', genre=Genre, type=Type, producer=Producer, studio=Studio, popularity=Popularity, members=Members, episodes=Episodes, prediction=prediction)
+        return render_template('result.html', genre=Genre, type=Type, producer=Producer, studio=Studio, popularity=Popularity, members=Members, episodes=Episodes, source=Source, prediction=prediction)
 
 if __name__ == "__main__":
     app.run(debug=True)
