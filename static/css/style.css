@@ -1,0 +1,74 @@
+/* Style for the body of the document */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Style for the header */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  /* Style for the form */
+  form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  /* Style for the form group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the label */
+  label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Style for the input fields */
+  input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the button */
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Style for the button on hover */
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  /* Style for the prediction div */
+  #prediction {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

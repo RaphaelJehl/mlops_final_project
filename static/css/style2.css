@@ -1,0 +1,52 @@
+/* Apply a basic reset to all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the container for the form and prediction results */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the heading elements */
+  h1, h2 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 40px;
+  }
+  
+  /* Style the table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the prediction result */
+  .prediction {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .prediction p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+  
