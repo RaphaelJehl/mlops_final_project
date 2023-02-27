@@ -22,5 +22,15 @@ pipeline {
                 bat 'docker run -d mlops_final_project'
             }
         }
+        stage('Login') {
+            steps{
+                bat "docker login --username=raphaeljehl --password=Aa.!10_www"
+            }
+        }
+        
+        stage('Push') {
+            steps{
+                bat "docker tag mlops_final_project raphaeljehl/new_repo:mlops_final_project"
+                bat "docker push raphaeljehl/new_repo:mlops_final_project"
     }
 }
